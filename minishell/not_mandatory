@@ -1,11 +1,9 @@
-# We need to implement "env with no options or arguments", the output here is optional
+
 env hello world 
 
-# We need to imlement only "cd with only a relative or absolute path"
 cd 
 cd ~
 
-# Empty export isn't set on `env` but is set on `export`
 export hello
 env | grep hello
 export | grep hello
@@ -14,14 +12,11 @@ export | grep hello
 unset HOME
 cd ~
 
-# Local variables are options
 aa==vv
 echo $aa
 
-# Open pipe waits for input
 ls |
 
-# Undefined
 <<<
 <<<<
 > '
